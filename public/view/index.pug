@@ -1,0 +1,18 @@
+extends layout.pug
+
+block header
+  link(rel="stylesheet", href="/assets/css/start.css")
+
+block content
+  header.intro
+    h1 Lumi
+      wbr
+      | nare
+    .curve
+
+  section.start
+    .btns
+      input#room(type="text", value="My Room")
+      button#join(style="margin-left:20px") Join
+  
+  script(src="/assets/js/start.js")

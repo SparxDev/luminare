@@ -1,0 +1,95 @@
+html, body {
+  background-color: #0e0e0e;
+}
+header.intro {
+  background-color: #111;
+  background: linear-gradient(to top right, #111, #1f1f1f);
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+header.intro h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 400%;
+  text-transform: uppercase;
+  letter-spacing: 100px;
+  margin-left: 100px;
+}
+header.intro .curve {
+  width: 100vw;
+  height: 100px;
+  background-image: url('/assets/img/curve.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+section.start {
+  background-color: #0e0e0e;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 1250px) {
+  header.intro h1 {
+    font-size: 300%;
+    letter-spacing: 50px;
+    margin-left: 50px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .btns, input[type="text"] {
+    display: block;
+  }
+  button {
+    margin-left: 0 !important;
+    margin-top: 10px;
+    float: right;
+  }
+  header.intro .curve {
+    height: 50px;
+  }
+  html, body {
+    height: 100%;
+  }
+  header.intro {
+    height: 65%;
+  }
+  section.start {
+    height: 35%;
+  }
+}
+
+.curveAnim {
+  animation: 0.4s cubic-bezier(0.65, 0, 0.35, 1) 0.2s pageTransition both;
+}
+.pageFade {
+  animation: 0.3s pageFade ease both;
+}
+.headerFade {
+  animation: 0.2s 0.4s ease both pageFade;
+}
+@keyframes pageTransition {
+  0% {
+    height: 100px;
+  }
+  100% {
+    height: 65vh;
+  }
+}
+@keyframes pageFade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

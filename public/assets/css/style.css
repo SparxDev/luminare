@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+* { margin: 0; box-sizing: border-box; }
+.btns {
+  display: flex;
+}
+input, button {
+  outline: 0;
+  border: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 100%;
+}
+input[type="text"] {
+  padding: 20px 35px;
+  border-radius: 200px;
+  font-size: 110%;
+  background-color: #ffd166;
+  color: #40341A;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}
+button {
+  text-transform: uppercase;
+  padding: 20px 35px;
+  border-radius: 200px;
+  font-weight: 700;
+  font-size: 110%;
+  cursor: pointer;
+  background-color: #ffd166;
+  color: #40341A;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.8);
+}

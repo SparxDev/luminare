@@ -1,0 +1,81 @@
+body {
+  background-color: #131313;
+}
+header.top {
+  background-color: #0e0e0e;
+  padding: 40px 80px;
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+header.top h1 {
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-left: 40px;
+}
+header.top .backBtn {
+  text-decoration: none;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-image: url('/assets/img/arrow.svg');
+  background-size: cover;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+header.top .backBtn:hover {
+  transform: translateX(-10px);
+}
+#roomName { display: none; }
+.namePlaceholder {
+  height: 39px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100px;
+}
+section#cams {
+  margin-top: 119px;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: grid;
+  justify-items: center;
+  grid-gap: 40px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-auto-rows: 300px;
+  align-items: center;
+}
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 23px;
+  box-shadow: 3px 3px 18px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 440px) {
+  .namePlaceholder {
+    width: 150px;
+  }
+}
+
+.pageLoad {
+  animation: 0.4s pageLoad ease both;
+}
+@keyframes pageLoad {
+  0% {
+    background-color: #0e0e0e;
+    opacity: 0;
+  }
+  100% {
+    background-color: #131313;
+    opacity: 1;
+  }
+}
